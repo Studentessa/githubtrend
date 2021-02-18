@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">XapoApp</string>
+    <string name="appbar_title">GitHub Trend</string>
+    <string name="error__something_went_wrong">Ups something went wrong</string>
+    <string name="error__close_button">OK</string>
+    <string name="filter_paymentlist_today">Today</string>
+    <string name="filter_paymentlist_thisweek">This week</string>
+    <string name="filter_paymentlist_thismonth">This moth</string>
+    <string name="filter_paymentlist_any">Any</string>
+
+    <string-array name="filter_range">
+        <item>@string/filter_paymentlist_today</item>
+        <item>@string/filter_paymentlist_thisweek</item>
+        <item>@string/filter_paymentlist_thismonth</item>
+    </string-array>
+
+    <string name="projectList_fragmentempty_empty_message">It looks like we don’t have any trending repositories for %1$s</string>
+    <string name="projectList_fragment_date_range">Date Range</string>
+    <string name="projectList_fragment_loading_text">Loading repositories</string>
+    <string name="projectList_fragment_any_language">Any language</string>
+    <string name="detail_project_fragment_builtBy">Built by</string>
+</resources>
