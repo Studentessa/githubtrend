@@ -1,4 +1,5 @@
 # githubtrend
+The project's idea is to list trending projects from Github and then tap on one of them and show their details.
 
 ## Solution decription
 *  Clean Architecture patron has been implemented using MVVM → the view (fragment) observe a StateFlow object which feeds states to the view that reacts to them and update the UI  
