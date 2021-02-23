@@ -3,7 +3,7 @@ package com.martinez.xapoapp.presentation.paymentList.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.martinez.xapoapp.data.domain.LanguageDomainModel
+import com.martinez.data.domain.LanguageDomainModel
 import com.martinez.xapoapp.databinding.ItemFragmentListLanguageBinding
 
 class LanguageAdapter constructor(

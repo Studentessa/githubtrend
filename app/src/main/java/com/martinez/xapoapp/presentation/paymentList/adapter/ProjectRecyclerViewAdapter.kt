@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.core.view.ViewCompat
 import coil.load
 import coil.transform.CircleCropTransformation
+import com.martinez.data.domain.ProjectDomainModel
 import com.martinez.xapoapp.R
 import com.martinez.xapoapp.base.setTextViewDrawableColor
-import com.martinez.xapoapp.data.domain.ProjectDomainModel
 import com.martinez.xapoapp.databinding.ItemFragmentListProjectBinding
 
 class ProjectRecyclerViewAdapter(
@@ -42,7 +42,7 @@ class ProjectRecyclerViewAdapter(
             }
 
             if (!item.languageColor.isNullOrEmpty()){
-                binding.textViewLanguage.setTextViewDrawableColor(item.languageColor)
+                binding.textViewLanguage.setTextViewDrawableColor(item.languageColor!!)
             }
             binding.root.setOnClickListener {
                 mListener(position, binding)

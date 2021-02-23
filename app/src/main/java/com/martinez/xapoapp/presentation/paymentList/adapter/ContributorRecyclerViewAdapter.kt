@@ -5,8 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.CircleCropTransformation
+import com.martinez.data.domain.ContributorDomainModel
 import com.martinez.xapoapp.R
-import com.martinez.xapoapp.data.domain.ContributorDomainModel
 import com.martinez.xapoapp.databinding.ItemContributorBinding
 
 class ContributorRecyclerViewAdapter constructor(

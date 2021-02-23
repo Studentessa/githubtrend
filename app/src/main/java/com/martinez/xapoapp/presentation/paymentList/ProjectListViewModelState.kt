@@ -1,6 +1,7 @@
 package com.martinez.xapoapp.presentation.paymentList
 
-import com.martinez.xapoapp.data.domain.ProjectDomainModel
+import com.martinez.data.domain.ProjectDomainModel
+
 
 sealed class ProjectListViewModelState {
     data class Loading(val language: String): ProjectListViewModelState()

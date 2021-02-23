@@ -2,15 +2,14 @@ package com.martinez.xapoapp.presentation.paymentList
 
 
 import androidx.hilt.lifecycle.ViewModelInject
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import com.martinez.xapoapp.data.repository.ProjectRepository
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.martinez.data.domain.DomainResponse
+import com.martinez.data.domain.LanguageDomainModel
+import com.martinez.data.domain.ProjectDomainModel
+import com.martinez.data.repository.ProjectRepository
 import com.martinez.xapoapp.base.util.EspressoIdlingResource
-import com.martinez.xapoapp.data.domain.ProjectDomainModel
-import com.martinez.xapoapp.data.domain.DomainResponse
-import com.martinez.xapoapp.data.domain.LanguageDomainModel
+
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -18,7 +17,7 @@ import kotlinx.coroutines.launch
 
 class ProjectListDetailViewModel @ViewModelInject
 constructor(
-    private val projectRepository:  ProjectRepository
+    private val projectRepository: ProjectRepository
 ):ViewModel(){
 
     private val arrayRange = arrayOf("daily", "weekly", "monthly")
@@ -31,7 +30,7 @@ constructor(
         get() = _projectListLiveData
 
     private var projectJob: Job ?= null
-    var projectSelected: ProjectDomainModel ?= null
+    var projectSelected: ProjectDomainModel?= null
     var languages: List<LanguageDomainModel> ?= null
 
     init {

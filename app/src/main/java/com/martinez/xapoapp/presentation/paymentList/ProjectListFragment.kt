@@ -10,12 +10,13 @@ import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.martinez.data.domain.ProjectDomainModel
 import com.martinez.xapoapp.R
 import com.martinez.xapoapp.base.observe
 import com.martinez.xapoapp.base.onItemSelected
 import com.martinez.xapoapp.base.setAdapter
 import com.martinez.xapoapp.base.showSomethingWentWrongDialog
-import com.martinez.xapoapp.data.domain.ProjectDomainModel
+
 import com.martinez.xapoapp.databinding.FragmentProjectListBinding
 import com.martinez.xapoapp.databinding.ItemFragmentListProjectBinding
 import com.martinez.xapoapp.presentation.paymentList.adapter.ProjectRecyclerViewAdapter
